@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import DBLogo from '../images/DailyBruinLogo.svg'
-import { colors } from '../shared/config'
+import DBLogo from "../images/DailyBruinLogo.svg";
+import { colors } from "../shared/config";
 
 const DBHeader = styled("div")`
   z-index: 2001;
@@ -9,11 +9,11 @@ const DBHeader = styled("div")`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: black;
+  background: #a7c5c6;
   width: 100%;
   padding: 0.2em 0;
   color: white;
-  font-family: 'ITC Century';
+  font-family: "ITC Century";
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -31,7 +31,7 @@ const Header = () => {
         <img src={DBLogo} alt="Daily Bruin" />
       </a>
     </DBHeader>
-  )
-}
+  );
+};
 
 export default Header;
