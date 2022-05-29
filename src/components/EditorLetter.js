@@ -11,7 +11,7 @@ const Container = styled.div`
     width: 80%;
     height: fit-content;
     block-size: fit-content;
-    border: 8px solid #C4C4C4;
+    border: 15px solid rgba(255, 255, 255, 0.5);
     font-family: 'Courier Prime', monospace;
     padding-bottom: 50px;
 
