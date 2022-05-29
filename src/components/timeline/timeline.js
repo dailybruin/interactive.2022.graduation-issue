@@ -14,6 +14,14 @@ import maskMandate from './images/mask-mandate.png';
 import danceMarathon from './images/dance-marathon.png';
 import abortionProtest from './images/abortion-protest.png';
 import springSing from './images/spring-sing.png';
+import bruinBash from './images/rico-nasty.png';
+import staffingShortage from './images/dining-hall-shortages.png';
+import roeblingBlockParty from './images/roebling-block-party.png';
+import rivalGame from './images/usc-ucla.png';
+import villanovaCrowd from './images/villanova-crowd.png';
+import lecturerStrike from './images/lecture-strike.png'
+import holidayBowl from './images/holiday-bowl.png';
+import covidSurge from './images/ucla-remote.png';
 import icon1 from './images/caterpillar.png';
 import icon2 from './images/cocoon.png';
 import icon3 from './images/oragami-butterfly-01.png';
@@ -58,9 +66,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">Bruin Bash</h3>
                     <p>
-                    Text here
+                    UCLA's Cultural Affairs Commission and Campus Events Commission put on UCLA's annual concert in which students gather to celebrate the start of the school year. This year, there were performances from Tkay Maidza, Yung Baby Tate and Rico Nasty. To accommodate for COVID-19 policies, the concert was held outdoors at the Los Angeles Tennis Center, and there was a synchronous screening for the performance at the Sunset Canyon Recreation Center. 
                     </p>
-                    <img src = {Duke} className = 'photo'></img>
+                    <img src = {bruinBash} className = 'photo'></img>
+                    <p className = 'photo-byline'>(Chelsea Westman/Daily Bruin)</p>
+                    <a className = 'readMore' href = 'https://www.google.com/url?q=https://dailybruin.com/2021/09/21/bruin-bash-2021-shines-with-stellar-performances-from-rico-nasty-opening-artists&sa=D&source=docs&ust=1653859864886595&usg=AOvVaw3fdd2hA5QlnHvBA-0PxfOD' target='_blank'>Read more about Bruin Bash</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="event-odd"
@@ -73,9 +83,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">Staffing Shortage</h3>
                     <p>
-                    text
+                    Returning from the pandemic, UCLA's dining halls faced a significantly decreased workforce. UCLA received a number of complaints from students and employees. While students dealt with long wait times and lines for meals, employees criticized UCLA for overworking and underpaying the current staff.
                     </p>
-                    <img src = {Duke} className = 'photo'></img>
+                    <img src = {staffingShortage} className = 'photo'></img>
+                    <p className = 'photo-byline'>(Photo by Noah Danesh/Daily Bruin. Photo Illustration by Katelyn Dang/Illustrations director)</p>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/11/11/dining-hall-labor-shortages-lead-to-longer-lines-low-quality-food-across-uc' target='_blank'>Read more about the dining hall labor shortage</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>October</span> : null}
                 <VerticalTimelineElement
@@ -90,9 +102,11 @@ const Timeline = () => {
                     <h3 className="vertical-timeline-element-title">Roebling Block Party</h3>
                     
                     <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    This year's annual Roebling block party on Oct. 1 resulted in two fires, multiple damaged scooters, burned furniture and multiple calls to LA Fire Department. Although the event is often known for its chaotic nature, an attendee noted that this year felt more extreme than those in the past. 
                     </p>
-                    <img src = {Duke} className = 'photo'></img>
+                    <img src = {roeblingBlockParty} className = 'photo'></img>
+                    <p className = 'photo-byline'>(Anika Chakrabarti/Assistant Photo editor)</p>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/10/02/roebling-block-party-sees-multiple-blazes-as-firefighters-law-enforcement-respond' target='_blank'>Read more about the Roebling block party</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>November</span> : null}
                 <VerticalTimelineElement
@@ -106,9 +120,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">UCLA-USC football game</h3>
                     <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    UCLA-USC football game: In its highest-scoring win of the season, UCLA football beat USC 62-33, marking its first win against the Trojans since 2018. Senior quarterback Dorian Thompson-Robinson scored a season-high six touchdowns during the game.  
                     </p>
-                    <img src = {Duke} className = 'photo'></img>
+                    <img src = {rivalGame} className = 'photo'></img>
+                    <p className = 'photo-byline'>(Ashley Kenney/Photo editor)</p>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/11/20/ucla-football-takes-down-usc-in-highest-scoring-win-of-2021-season' target='_blank'>Read more about the annual UCLA-USC football game</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="event-odd"
@@ -121,9 +137,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">Large crowds for UCLA-Villanova men's basketball game</h3>
                     <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    Large crowds for UCLA-Villanova men's basketball game: UCLA men's basketball had a high audience turnout for the top-four showdown with Villanova on Nov. 12. Anticipation for the event led to large crowds that turned into a mob as students swarmed to get wristbands. Many students who lined up early were unable to get wristbands, and many feared for their safety during the event. 
                     </p>
-                    <img src = {Duke} className = 'photo'></img>
+                    <img src = {villanovaCrowd} className = 'photo'></img>
+                    <p className = 'photo-byline'>(Courtesy of Sam Settleman)</p>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/11/13/students-fear-for-safety-express-concern-over-conditions-to-enter-pauley-pavilion' target='_blank'>Read more about the UCLA-Villanova  basketball game</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="event-odd"
@@ -134,11 +152,13 @@ const Timeline = () => {
                     iconStyle={{ background: '#A7C5C6', color: '#795663', boxShadow: '0 0 0 4px #795663, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05)' }}
                     icon={<img src = {icon2} className = 'icon2'></img>}
                 >
-                    <h3 className="vertical-timeline-element-title">Lecturers proposed strike</h3>
+                    <h3 className="vertical-timeline-element-title">Lecturers' proposed strike</h3>
                     <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    The University Council-American Federation of Teachers authorized a two-day unfair labor practice strike against the University of California. The strike – the first from UC-AFT since 2002 – was in response to the lack of consideration and conversation regarding union bargaining rights and negotiations. However, hours before the proposed strike, the union reached an agreement with the UC, calling off the original strike and gathering in Bruin Plaza to celebrate.
                     </p>
-                    <img src = {Duke} className = 'photo'></img>
+                    <img src = {lecturerStrike} className = 'photo'></img>
+                    <p className = 'photo-byline'>((Lauren Man/Daily Bruin senior staff)</p>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/11/17/uc-lecturers-cancel-planned-strike-after-reaching-new-contract-agreement' target='_blank'>Read more about the UC-AFT strike at UCLA</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>December</span> : null}
                 <VerticalTimelineElement
@@ -152,9 +172,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">Holiday bowl dropout</h3>
                     <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    Due to COVID-19 protocols within the program, UCLA football was deemed unable to participate in the Holiday Bowl five hours before the scheduled kickoff. The bowl was eventually canceled when a replacement team for UCLA could not be found. 
                     </p>
-                    <img src = {Duke} className = 'photo'></img>
+                    <img src = {holidayBowl} className = 'photo'></img>
+                    <p className = 'photo-byline'>(Kanishka Mehra/Daily Bruin senior staff)</p>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/12/28/holiday-bowl-canceled-because-of-covid-19-protocols-within-ucla-football-program' target='_blank'>Read more about last year's holiday bowl</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="event-odd"
@@ -167,9 +189,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">COVID-19 surge</h3>
                     <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    Due to the rise of the omicron variant, UCLA announced a return to online instruction until Jan. 18. This announcement came along with the new requirement that all nonexempt employees and students would be required to receive the COVID-19 booster shot and would have to complete a COVID-19 test once a week.
                     </p>
-                    <img src = {Duke} className = 'photo'></img>
+                    <img src = {covidSurge} className = 'photo' ></img>
+                    <p className = 'photo-byline'>(Ashley Kenney/Photo editor)</p>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/12/21/ucla-to-operate-remotely-for-initial-weeks-amid-rising-covid-19-cases-due-to-omicron-variant' target='_blank'>Read more about how the Omicron variant impacted UCLA</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>January</span> : null}
                 {/*THIS IS WHERE THE NEW YEAR STARTS NEW YEAR NEW YEAR NEW YEAR NEW YEAR NEW YEAR*/}
