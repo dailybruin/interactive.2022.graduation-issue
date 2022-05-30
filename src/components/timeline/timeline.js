@@ -86,7 +86,7 @@ const Timeline = () => {
                     Returning from the pandemic, UCLA's dining halls faced a significantly decreased workforce. UCLA received a number of complaints from students and employees. While students dealt with long wait times and lines for meals, employees criticized UCLA for overworking and underpaying the current staff.
                     </p>
                     <img src = {staffingShortage} className = 'photo'></img>
-                    <p className = 'photo-byline'>(Photo by Noah Danesh/Daily Bruin. Photo Illustration by Katelyn Dang/Illustrations director)</p>
+                    <p className = 'photo-byline'>(Photo by Noah Danesh/Daily Bruin. Photo Illustration by Katelyn Dang/Daily Bruin senior staff)</p>
                     <a className = 'readMore' href = 'https://dailybruin.com/2021/11/11/dining-hall-labor-shortages-lead-to-longer-lines-low-quality-food-across-uc' target='_blank'>Read more about the dining hall labor shortage</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>October</span> : null}
@@ -105,7 +105,7 @@ const Timeline = () => {
                     This year's annual Roebling block party on Oct. 1 resulted in two fires, multiple damaged scooters, burned furniture and multiple calls to LA Fire Department. Although the event is often known for its chaotic nature, an attendee noted that this year felt more extreme than those in the past. 
                     </p>
                     <img src = {roeblingBlockParty} className = 'photo'></img>
-                    <p className = 'photo-byline'>(Anika Chakrabarti/Assistant Photo editor)</p>
+                    <p className = 'photo-byline'>(Anika Chakrabarti/Photo editor)</p>
                     <a className = 'readMore' href = 'https://dailybruin.com/2021/10/02/roebling-block-party-sees-multiple-blazes-as-firefighters-law-enforcement-respond' target='_blank'>Read more about the Roebling block party</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>November</span> : null}
@@ -123,7 +123,7 @@ const Timeline = () => {
                     UCLA-USC football game: In its highest-scoring win of the season, UCLA football beat USC 62-33, marking its first win against the Trojans since 2018. Senior quarterback Dorian Thompson-Robinson scored a season-high six touchdowns during the game.  
                     </p>
                     <img src = {rivalGame} className = 'photo'></img>
-                    <p className = 'photo-byline'>(Ashley Kenney/Photo editor)</p>
+                    <p className = 'photo-byline'>(Ashley Kenney/Daily Bruin senior staff)</p>
                     <a className = 'readMore' href = 'https://dailybruin.com/2021/11/20/ucla-football-takes-down-usc-in-highest-scoring-win-of-2021-season' target='_blank'>Read more about the annual UCLA-USC football game</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -157,7 +157,7 @@ const Timeline = () => {
                     The University Council-American Federation of Teachers authorized a two-day unfair labor practice strike against the University of California. The strike – the first from UC-AFT since 2002 – was in response to the lack of consideration and conversation regarding union bargaining rights and negotiations. However, hours before the proposed strike, the union reached an agreement with the UC, calling off the original strike and gathering in Bruin Plaza to celebrate.
                     </p>
                     <img src = {lecturerStrike} className = 'photo'></img>
-                    <p className = 'photo-byline'>((Lauren Man/Daily Bruin senior staff)</p>
+                    <p className = 'photo-byline'>(Lauren Man/Daily Bruin senior staff)</p>
                     <a className = 'readMore' href = 'https://dailybruin.com/2021/11/17/uc-lecturers-cancel-planned-strike-after-reaching-new-contract-agreement' target='_blank'>Read more about the UC-AFT strike at UCLA</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>December</span> : null}
@@ -192,7 +192,7 @@ const Timeline = () => {
                     Due to the rise of the omicron variant, UCLA announced a return to online instruction until Jan. 18. This announcement came along with the new requirement that all nonexempt employees and students would be required to receive the COVID-19 booster shot and would have to complete a COVID-19 test once a week.
                     </p>
                     <img src = {covidSurge} className = 'photo' ></img>
-                    <p className = 'photo-byline'>(Ashley Kenney/Photo editor)</p>
+                    <p className = 'photo-byline'>(Ashley Kenney/Daily Bruin senior staff)</p>
                     <a className = 'readMore' href = 'https://dailybruin.com/2021/12/21/ucla-to-operate-remotely-for-initial-weeks-amid-rising-covid-19-cases-due-to-omicron-variant' target='_blank'>Read more about how the Omicron variant impacted UCLA</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>January</span> : null}
@@ -262,7 +262,7 @@ const Timeline = () => {
                     The Los Angeles Rams beat the Cincinnati Bengals 23-20 in Super Bowl LVI on Feb. 13. Leading up to the Super Bowl, the Bengals stayed on UCLA’s campus at the Meyer and Renee Luskin Conference Center. 
                     </p>
                     <img src = {superbowl} className = 'photo'></img>
-                    <p className = 'photo-byline'>(David Rimer, Daily Bruin Senior Staff)</p>
+                    <p className = 'photo-byline'>(David Rimer, Daily Bruin senior sßtaff)</p>
                     <a className = 'readMore' href = 'https://dailybruin.com/2022/02/12/gallery-los-angeles-rams-and-cincinnati-bengals-speak-to-press-before-super-bowl-lvi' target='_blank'>Read more about Super Bowl LVI</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -297,7 +297,7 @@ const Timeline = () => {
                     Lifting of mask mandate: In March, UCLA announced that it would lift the indoor masking mandate for fully vaccinated individuals starting April 11. Earlier in March, the LA County Department of Public Health lifted its indoor masking requirement.
                     </p>
                     <img src = {maskMandate} className = 'photo'></img>
-                    <p className = 'photo-byline'>(Ashley Kenney/Daily Bruin Senior staff)</p>
+                    <p className = 'photo-byline'>(Ashley Kenney/Daily Bruin senior staff)</p>
                     <a className = 'readMore' href = 'https://dailybruin.com/2022/03/11/ucla-to-lift-on-campus-masking-testing-requirements-beginning-april-11' target='_blank'>Read more about the lifting of the mask mandate</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>April</span> : null}
@@ -315,7 +315,7 @@ const Timeline = () => {
                     Dance Marathon, a fundraiser organized by the Pediatric AIDS Coalition at UCLA, returned in person this year. The event was only 13 hours instead of its normal 26 due to COVID-19 protocols, but it still raised $112,805.42. 
                     </p>
                     <img src = {danceMarathon} className = 'photo'></img>
-                    <p className = 'photo-byline'>(David Rimer/Daily Bruin Senior staff)</p>
+                    <p className = 'photo-byline'>(David Rimer/Daily Bruin senior staff)</p>
                     <a className = 'readMore' href = 'https://dailybruin.com/2022/04/04/dance-marathon-2022-fights-pediatric-aids-with-in-person-fundraising-event' target='_blank'>Read more about Dance Marathon</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>May</span> : null}
