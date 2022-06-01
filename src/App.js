@@ -47,13 +47,10 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      {data && <EditorLetter editor_letter={data.editor_letter} />}
       <Content>
-        <EditorLetter editor_letter = "Here is some sample text to fill in the space of the letter from the editors. here is a fun fact: did you know dinosaurs had holes in their head kinda like car windows which made their skull really light even though their heads were massive. Like as big as an SUV massive. But their skulls are empty so they are relatively light. You know what that means: dinosaurs were stupid. But oh well, this all doesn’t matter because they are dead." />
-        <ArticleCard article_url="https://google.com" article_title="it's friday" article_byline="Tracy Zhao" color="white"/>
-        <ArticleCard article_url="https://google.com" article_title="it's friday" article_byline="Tracy Zhao" color="white"/>
-        <ArticleCard article_url="https://google.com" article_title="it's friday" article_byline="Tracy Zhao" color="white"/>
       </Content>
-      <About about = "Here is some sample text to fill in the space of the about section. here is a fun fact: did you know dinosaurs had holes in their head kinda like car windows which made their skull really light even though their heads were massive. Like as big as an SUV massive. But their skulls are empty so they are relatively light. You know what that means: dinosaurs were stupid. But oh well, this all doesn’t matter because they are dead." />
+      {data && <About about={data.about} />}
       <Footer/>
     </div>
   );
