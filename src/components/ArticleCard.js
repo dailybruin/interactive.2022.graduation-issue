@@ -56,6 +56,9 @@ export default function ArticleCard(props)
         color: #${getTextColor(props.color)};
         height: fit-content;
         block-size: fit-content;
+
+        margin-left: 20%;
+
         ${mediaQueries.mobile} {
             width: 90%;
     }
