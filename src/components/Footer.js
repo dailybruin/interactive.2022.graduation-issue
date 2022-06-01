@@ -9,9 +9,9 @@ import { mediaQueries } from '../shared/config';
 
 
 const Container = styled.div`
-	background-color: black;
+	background-color: #DBE9E9;
 	height: auto;
-	color: white;
+	color: #524F40;
 	padding: 60px 0 10px 0;
     text-align: center;
 	h1 {
@@ -24,7 +24,7 @@ const Container = styled.div`
 
 const Socials = styled.div`
     position: relative;
-	margin-top: 20px;
+    margin-top: 20px;
   
 	img {
 

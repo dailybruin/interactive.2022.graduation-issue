@@ -5,19 +5,10 @@ import { mediaQueries } from '../shared/config';
 import leavesBorder2 from '../images/leavesBorder2.svg';
 import butterfly from '../images/butterfly1.svg';
 
-const Outer = styled.div `
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: 20%;
-    /* background-image: url(${leavesBorder2});
-    background-repeat: no-repeat;
-    background-position: bottom -30% left 2%;
-    z-index: 12; */
-`
 
 const Container = styled.div`
     position: relative;
-    margin: auto;
+    margin: 5% auto 10% auto;
     width: 80%;
     height: fit-content;
     block-size: fit-content;
@@ -29,8 +20,11 @@ const Container = styled.div`
     }
 `
 
+const Text = styled.div`
+    padding: 10% 13%;
+`
+
 const Header = styled.div`
-    position: static;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -38,19 +32,15 @@ const Header = styled.div`
     line-height: 51px;
     text-shadow: 0px 4px 4px rgba(82, 79, 64, 0.15);
     color: #785887;
-    padding-top: 130px;
     padding-bottom: 40px;
 `
 
 const Content = styled.div`
-    position: static;
     margin: auto;
-    width: 70%;
     font-weight: 400;
     font-size: 32px;
     line-height: 36px;
     text-align: justify;
-    margin-bottom: 135px;
 `
 
 const BottomBorder = styled.img`
@@ -59,25 +49,40 @@ const BottomBorder = styled.img`
     left: -12%;
 `
 
-const Butterfly = styled.img`
+const ButterflyBottom = styled.img`
     position: absolute; 
     transform: rotate(-12.57deg);
     width: 314px;
     height: 314px;
     bottom: -20%;
-    right: -10%;
+    right: -12%;
+`
+
+const ButterflyTop = styled.img`
+    position: absolute;
+    transform: rotate(7.26deg);
+    width: 208px;
+    height: 196px;
+    top: 5%;
+    left: -2%;
+
+    ${mediaQueries.mobile} {
+        top: -2%;
+        left: -8%;
+    }
 `
 
 export default function About(props)
 {
     return (
-        <Outer>
-            <Container>
+        <Container>
+            <Text>
                 <Header>About</Header>
                 <Content>{props.about}</Content>
-                <BottomBorder src = {leavesBorder2} />
-                <Butterfly src = {butterfly} />
-            </Container>
-        </Outer>
+                <ButterflyTop src = {butterfly} />
+            </Text>
+            <BottomBorder src = {leavesBorder2} />
+            <ButterflyBottom src = {butterfly} />
+        </Container>
     )
 }
