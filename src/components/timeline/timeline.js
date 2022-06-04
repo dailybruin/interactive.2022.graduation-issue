@@ -119,7 +119,7 @@ const Timeline = () => {
                     </p>
                     <img src = {rivalGame} className = 'photo' alt = 'game shot from UCLA USC football game'></img>
                     <p className = 'photo-byline'>(Ashley Kenney/Daily Bruin senior staff)</p>
-                    <a className = 'readMore' href = 'https://dailybruin.com/2021/11/20/ucla-football-takes-down-usc-in-highest-scoring-win-of-2021-season' target='_blank'>Read more about the annual UCLA-USC football game</a>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/11/20/ucla-football-takes-down-usc-in-highest-scoring-win-of-2021-season' target='_blank'>Read more about the UCLA vs. USC football game</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="event-odd"
@@ -136,7 +136,7 @@ const Timeline = () => {
                     </p>
                     <img src = {villanovaCrowd} className = 'photo' alt = 'crowd before Villanova at UCLA basketball game'></img>
                     <p className = 'photo-byline'>(Courtesy of Sam Settleman)</p>
-                    <a className = 'readMore' href = 'https://dailybruin.com/2021/11/13/students-fear-for-safety-express-concern-over-conditions-to-enter-pauley-pavilion' target='_blank'>Read more about the UCLA-Villanova  basketball game</a>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/11/13/students-fear-for-safety-express-concern-over-conditions-to-enter-pauley-pavilion' target='_blank'>Read more about the UCLA vs. Villanova men’s basketball game</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="event-odd"
@@ -171,7 +171,7 @@ const Timeline = () => {
                     </p>
                     <img src = {holidayBowl} className = 'photo' alt = "UCLA's football team"></img>
                     <p className = 'photo-byline'>(Kanishka Mehra/Daily Bruin senior staff)</p>
-                    <a className = 'readMore' href = 'https://dailybruin.com/2021/12/28/holiday-bowl-canceled-because-of-covid-19-protocols-within-ucla-football-program' target='_blank'>Read more about last year's holiday bowl</a>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/12/28/holiday-bowl-canceled-because-of-covid-19-protocols-within-ucla-football-program' target='_blank'>Read more about last year’s Holiday Bowl</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="event-odd"
@@ -188,7 +188,7 @@ const Timeline = () => {
                     </p>
                     <img src = {covidSurge} className = 'photo' alt = "Royce Hall with a campus is closed sign"></img>
                     <p className = 'photo-byline'>(Ashley Kenney/Daily Bruin senior staff)</p>
-                    <a className = 'readMore' href = 'https://dailybruin.com/2021/12/21/ucla-to-operate-remotely-for-initial-weeks-amid-rising-covid-19-cases-due-to-omicron-variant' target='_blank'>Read more about how the Omicron variant impacted UCLA</a>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2021/12/21/ucla-to-operate-remotely-for-initial-weeks-amid-rising-covid-19-cases-due-to-omicron-variant' target='_blank'>Read more about how the omicron variant impacted UCLA</a>
                 </VerticalTimelineElement>
                 {(window.innerWidth < 1170)? <span className = 'date'>January</span> : null}
                 {/*THIS IS WHERE THE NEW YEAR STARTS NEW YEAR NEW YEAR NEW YEAR NEW YEAR NEW YEAR*/}
@@ -224,7 +224,7 @@ const Timeline = () => {
                     </p>
                     <img src = {gymControversy} className = 'photo' alt ='Photo of then-coach Chris Waller'></img>
                     <p className = 'photo-byline'>(Marc-Anthony Rosas/Daily Bruin)</p>
-                    <a className = 'readMore' href = 'https://dailybruin.com/2022/01/26/ucla-gymnast-margzetta-frazier-calls-for-coaching-change-amid-hostile-environment' target="_blank">Read more about the allegations of racism within UCLA Gymnastics</a>
+                    <a className = 'readMore' href = 'https://dailybruin.com/2022/01/26/ucla-gymnast-margzetta-frazier-calls-for-coaching-change-amid-hostile-environment' target="_blank">Read more about the allegations of racism within UCLA gymnastics</a>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="event-odd"
@@ -350,7 +350,7 @@ const Timeline = () => {
                 </VerticalTimelineElement>
             </VerticalTimeline>
         </div>
-        <div className='byLine'>Graphic Reporting and Interactive by Lindsey Parungo, Data editor and Priya Kanneboyina, assistant Data editor.</div>
+        <div className='byLine'>Graphic reporting and interactive by Lindsey Parungo, Data editor, and Priya Kanneboyina, assistant Data editor.</div>
         </div>
     );
 };
