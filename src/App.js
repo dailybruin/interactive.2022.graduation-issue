@@ -36,6 +36,15 @@ const Content = styled.div `
     background-size:100% 50%;
 }`
 
+const Section = styled.div`
+  font-family: 'Macondo', cursive;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 400;
+  color: #785887;
+  margin: 100px auto 45px auto;
+`
+
 function App() {
   const [ data, setData ] = useState(null);
   
@@ -48,8 +57,34 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      
       {data && <EditorLetter editor_letter={data.editor_letter} />}
+      <Timeline/>
       <Content>
+        <Section>
+          News
+        </Section>
+        <Section>
+          Sports
+        </Section>
+        <Section>
+          Arts
+        </Section>
+        <Section>
+          Opinion
+        </Section>
+        <Section>
+          The Quad
+        </Section>
+        <Section>
+          Multimedia
+        </Section>
+        <Section>
+          Prime
+        </Section>
+        <Section>
+          -30-
+        </Section>
       </Content>
       {data && <About about={data.about} />}
       <Footer/>
