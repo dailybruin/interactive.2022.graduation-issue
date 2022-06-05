@@ -44,7 +44,7 @@ const Section = styled.div`
   font-size: 100px;
   font-weight: 400;
   color: #785887;
-  margin: 100px auto 45px auto;
+  margin: 100px auto 50px auto;
 `
 
 function App() {
@@ -61,7 +61,10 @@ function App() {
       <Header/>
       {data && <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>}
       {data && <EditorLetter editor_letter={data.editor_letter} />}
-      <Timeline/>
+      <Section>
+        Timeline
+        <Timeline/>
+      </Section>
       <Content>
         <Section>
           News

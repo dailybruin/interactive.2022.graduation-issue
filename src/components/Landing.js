@@ -9,7 +9,7 @@ const Container = styled.div `
 `
 
 const Illo = styled.img`
-    width: 100%;
+    width: 100vw;
     height: auto;
 `
 
