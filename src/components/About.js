@@ -9,7 +9,7 @@ import butterfly from '../images/butterfly1.svg';
 const Container = styled.div`
     position: relative;
     margin: 5% auto 10% auto;
-    width: 80%;
+    width:75%;
     height: fit-content;
     block-size: fit-content;
     border: 15px solid rgba(255, 255, 255, 0.5);

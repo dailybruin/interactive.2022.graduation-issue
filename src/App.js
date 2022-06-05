@@ -17,10 +17,12 @@ import downLeaf from './images/downLeaf.svg';
 import Border from './components/Border.js';
 import EditorLetter from "./components/EditorLetter";
 import About from "./components/About";
+import BannerAd from "./components/BannerAd";
+import Landing from "./components/Landing";
 import Timeline from './components/timeline/timeline';
 
 const Content = styled.div `
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   /* background-image: 
     url(${upLeaf}), url(${caterpillar}), url(${cocoon}), url(${butterfly1}), url(${butterfly2}), url(${downLeaf});
@@ -57,7 +59,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      
+      {data && <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>}
       {data && <EditorLetter editor_letter={data.editor_letter} />}
       <Timeline/>
       <Content>
