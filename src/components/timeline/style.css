@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+.total-container{
+    width: 85%;
+    margin: auto;
+}
+.timeline-container{
+    background-color: #CDE2ED;
+    height: 600px;
+    overflow-y: scroll;
+    width: 100%;
+    margin:auto;
+    overflow-x: hidden;
+}
+.timeline-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+.timeline-container::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: gray;
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+@media only screen and (max-width: 600px){
+    .timeline-container{
+        height:550px
+    }
+}
+.photo{
+    width: 85%
+}
+.icon{
+    width: 80%;
+    margin-top:20%; 
+}
+.icon2{
+    width: 40%;
+    margin-top: 20%;
+}
+.intro, .byLine{
+    background-color: #A7C5C6;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier Prime', Courier, monospace;
+}
+.readMore{
+    display: block;
+    font-size: 12px;
+}
+.photo-byline{
+    display: block;
+    font-size: 8px !important;
+    margin-top: 0px !important;
+}
+.date{
+    color: #785887;
+    font-size: 40px !important;
+    font-family: 'Courier Prime', Courier, monospace;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+.byLine{
+    font-size: 12px;
+    padding: 5px;
+}

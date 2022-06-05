@@ -17,6 +17,7 @@ import downLeaf from './images/downLeaf.svg';
 import Border from './components/Border.js';
 import EditorLetter from "./components/EditorLetter";
 import About from "./components/About";
+import Timeline from './components/timeline/timeline';
 
 const Content = styled.div `
   width: 95%;
