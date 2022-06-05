@@ -20,6 +20,9 @@ import About from "./components/About";
 import BannerAd from "./components/BannerAd";
 import Landing from "./components/Landing";
 import Timeline from './components/timeline/timeline';
+import NavBar from "./components/NavBar";
+
+import { HashLink } from 'react-router-hash-link';
 
 const Content = styled.div `
   width: 100%;
@@ -60,6 +63,7 @@ function App() {
     <div className="App">
       <Header/>
       {data && <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>}
+      <NavBar/>
       {data && <EditorLetter editor_letter={data.editor_letter} />}
       <Section>
         Timeline
