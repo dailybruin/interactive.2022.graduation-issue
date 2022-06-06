@@ -78,8 +78,8 @@ const AppContent = () => {
       {data && <EditorLetter editor_letter={data.editor_letter} />}
       <Section>
         Timeline
-        <Timeline />
       </Section>
+      <Timeline />
       <Content>
         <Section id="news">News</Section>
         <Section id="sports">Sports</Section>

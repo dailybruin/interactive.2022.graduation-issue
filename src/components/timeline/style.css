@@ -2,6 +2,7 @@
 .total-container{
     width: 85%;
     margin: auto;
+    border: 5px solid #DBE9E9;
 }
 .timeline-container{
     background-color: #CDE2ED;
@@ -28,14 +29,6 @@
 .photo{
     width: 85%
 }
-.icon{
-    width: 80%;
-    margin-top:20%; 
-}
-.icon2{
-    width: 40%;
-    margin-top: 20%;
-}
 .intro, .byLine{
     background-color: #A7C5C6;
     color: black;
@@ -47,6 +40,9 @@
 .readMore{
     display: block;
     font-size: 12px;
+}
+.readMore:visited{
+    color: #795663
 }
 .photo-byline{
     display: block;
