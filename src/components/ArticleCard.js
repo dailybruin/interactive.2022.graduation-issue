@@ -51,16 +51,13 @@ export default function ArticleCard(props)
     }
 
     const Container = styled.div`
-        width: 323px;
+        max-width: 325px;
         background-color: #${getBackground(props.color)};
         color: #${getTextColor(props.color)};
         height: fit-content;
-        block-size: fit-content;
-
-        margin-left: 20%;
 
         ${mediaQueries.mobile} {
-            width: 90%;
+            width: 100%;
     }
     `
 

@@ -1,10 +1,40 @@
+import React from "react";
+import styled from "styled-components";
+import { mediaQueries } from "../shared/config";
+
+import Card from "./ArticleCard";
+
+const Container = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 35px;
+    column-gap: 35px;
+    margin: auto;
+    width: 75%;
+    align-items: start;
+
+    ${mediaQueries.mobile} {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+    }
+`
+
+
 export default function ArticleGrid(props) {
-    <div>
-            {props && props.articles ? props.articles.map((article) => {
-                console.log(article);
-                return(
-                    <Card article_title={article.article_title} article_byline={article.article_byline} article_image={article.article_image} article_url={article.article_url}/>
-                )
+    return (
+        <Container>
+            {props && props.articles ? props.articles.map((item) => {
+                if (item.type == 'article') {
+                    console.log(props.articles)
+                    return(
+                        <Card article_title={item.article_title} article_byline={item.article_byline} article_image={item.article_image} article_url={item.article_url} color={item.color}/>
+                    )
+                }
+                
             }) : null}
-    </div>
+        </Container>
+    )
 }

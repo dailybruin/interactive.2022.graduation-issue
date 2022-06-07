@@ -18,6 +18,8 @@ import BannerAd from "./components/BannerAd";
 import Landing from "./components/Landing";
 import Timeline from "./components/timeline/timeline";
 import NavBar from "./components/NavBar";
+import ArticleGrid from "./components/ArticleGrid";
+import DescriptionBox from "./components/DescriptionBox";
 
 
 const Articles = styled.div`
@@ -67,6 +69,8 @@ const AppContent = () => {
       .then((res) => setData(res.data["article.aml"]));
   }, []);
 
+  data && console.log(data); 
+
   return (
     <div className="App">
       <Header />
@@ -77,7 +81,7 @@ const AppContent = () => {
         />
       )}
       <NavBar />
-      {data &&<EditorLetter editor_letter={data.editor_letter} />}
+      {data && <EditorLetter editor_letter={data.editor_letter} />}
       <Section>
         Timeline
       </Section>
@@ -86,13 +90,22 @@ const AppContent = () => {
         {/* <LeftContainer src= {leftBorder}/>
         <RightContainer src= {rightBorder}/> */}
         <Section id="news">News</Section>
+        {data && <ArticleGrid articles={data.news}/>}
         <Section id="sports">Sports</Section>
+        {data && <ArticleGrid articles={data.sports}/>}
         <Section id="arts">Arts</Section>
+        {data && <ArticleGrid articles={data.arts}/>}
         <Section id="opinion">Opinion</Section>
+        {data && <ArticleGrid articles={data.opinion}/>}
         <Section id="the-quad">The Quad</Section>
+        {data && <ArticleGrid articles={data.quad}/>}
         <Section id="multimedia">Multimedia</Section>
+        {data && <ArticleGrid articles={data.multimedia}/>}
         <Section id="prime">Prime</Section>
+        {data && <ArticleGrid articles={data.prime}/>}
         <Section id="-30-">-30-</Section>
+        <DescriptionBox/>
+        {data && <ArticleGrid articles={data.thirty}/>}
       </Articles>
       {data && <About about={data.about} />}
       <Footer />
