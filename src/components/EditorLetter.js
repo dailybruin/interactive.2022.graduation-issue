@@ -7,7 +7,7 @@ import outlineButterfly from "../images/outlineButterfly.svg";
 
 const Container = styled.div`
   position: relative;
-  margin: 20% auto 10% auto;
+  margin: 12% auto 10% auto;
   width: 75%;
   height: fit-content;
   block-size: fit-content;
@@ -43,17 +43,16 @@ const Content = styled.div`
   padding-bottom: 50px;
 `;
 
-const SignOff = styled.div`
-  margin: auto;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 36px;
-  text-align: justify;
-`;
+// const SignOff = styled.div`
+//   margin: auto;
+//   font-weight: 400;
+//   font-size: 32px;
+//   text-align: justify;
+// `;
 
 const BottomBorder = styled.img`
   position: absolute;
-  bottom: -16%;
+  bottom: -4%;
   right: -13%;
 `;
 
@@ -85,9 +84,16 @@ export default function EditorLetter(props) {
       <Butterfly3 src={outlineButterfly} />
       <Text>
         <Header id="letter-from-the-editors">Letter From the Editors</Header>
-        <Content>{props.editor_letter}</Content>
-        <SignOff> warmly, </SignOff>
-        <SignOff>the editors & co</SignOff>
+        <Content>
+          {props.editor_letter.map((info) => {
+            if (info.type == 'paragraph'){
+              return ( <p>{info.content}</p> )
+            }
+            else if (info.type == 'signoff') {
+              return (<p>{info.content} </p>)
+            }
+          })}
+        </Content>
       </Text>
       <BottomBorder src={leavesBorder} />
     </Container>

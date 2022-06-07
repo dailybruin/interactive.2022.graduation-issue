@@ -77,7 +77,7 @@ const AppContent = () => {
         />
       )}
       <NavBar />
-      {data && <EditorLetter editor_letter={data.editor_letter} />}
+      {data &&<EditorLetter editor_letter={data.editor_letter} />}
       <Section>
         Timeline
       </Section>

@@ -44,7 +44,7 @@ const Content = styled.div`
 
 const BottomBorder = styled.img`
   position: absolute;
-  bottom: -19%;
+  bottom: -1.5%;
   left: -12%;
 `;
 
@@ -53,7 +53,7 @@ const ButterflyBottom = styled.img`
   transform: rotate(-12.57deg);
   width: 314px;
   height: 314px;
-  bottom: -20%;
+  bottom: -1.5%;
   right: -12%;
 `;
 
@@ -62,7 +62,7 @@ const ButterflyTop = styled.img`
   transform: rotate(7.26deg);
   width: 208px;
   height: 196px;
-  top: 5%;
+  top: 0.5%;
   left: -2%;
 
   ${mediaQueries.mobile} {
@@ -76,7 +76,19 @@ export default function About(props) {
     <Container>
       <Text>
         <Header id="about">About</Header>
-        <Content>{props.about}</Content>
+        <Content>
+          {props.about.map((info) => {
+            if (info.type == 'paragraph'){
+              return ( <p>{info.content}</p> )
+            }
+            else if (info.type == 'Name_Position') {
+              return (<p style={{"text-align":"left"}}>{info.content} </p>)
+            }
+            else if (info.type == 'Section_header') {
+              return (<p style={{"font-weight":"bold", "padding-top": "30px"}}>{info.content} </p>)
+            }
+          })}
+        </Content>
         <ButterflyTop src={butterfly} />
       </Text>
       <BottomBorder src={leavesBorder2} />
