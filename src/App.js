@@ -21,35 +21,44 @@ import ArticleGrid from "./components/ArticleGrid";
 import DescriptionBox from "./components/DescriptionBox";
 
 
-const Articles = styled.div`
-  margin: auto;
-`
-
 const BorderGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  width: 100%;
+  width: 100vw;
+`
+
+const Articles = styled.div`
+  margin: auto;
+  ${mediaQueries.mobile} {
+    grid-column: 1/3;
+    margin: auto;
+    width: 100vw;
+  }
 `
 
 const LeftContainer = styled.div`
-  width: fit-content;
   justify-self: flex-start;
   img {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     padding-top: 100px;
+    ${mediaQueries.mobile} {
+      display: none
+    }
   }
 `
 
 const RightContainer = styled.div`
   justify-self: flex-end;
-  width: fit-content;
   img {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     padding-top: 100px;
+    ${mediaQueries.mobile} {
+      display: none
+    }
   }
 `
 
@@ -60,6 +69,9 @@ const Section = styled.div`
   font-weight: 400;
   color: #785887;
   margin: 100px auto 40px auto;
+  ${mediaQueries.mobile} {
+    font-size: 40px;
+  }
 `;
 
 const AppContent = () => {

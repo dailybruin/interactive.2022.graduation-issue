@@ -32,6 +32,9 @@ const Header = styled.div`
   text-shadow: 0px 4px 4px rgba(82, 79, 64, 0.15);
   color: #785887;
   padding-bottom: 40px;
+  ${mediaQueries.mobile} {
+    font-size: 20px;
+  }
 `;
 
 const Content = styled.div`
@@ -40,18 +43,27 @@ const Content = styled.div`
   font-size: 32px;
   line-height: 36px;
   text-align: justify;
+  ${mediaQueries.mobile} {
+    font-size: 15px;
+  }
 `;
 
 const BottomBorder = styled.img`
   position: absolute;
   bottom: -4.5%;
   right: -13%;
+  ${mediaQueries.mobile} {
+    display: none;
+  }
 `;
 
 const Butterfly1 = styled.img`
   position: absolute;
   left: -150px;
   top: -190px;
+  ${mediaQueries.mobile} {
+    display: none;
+  }
 `;
 
 const Butterfly2 = styled.img`
@@ -59,6 +71,9 @@ const Butterfly2 = styled.img`
   transform: matrix(-1.08, -0.55, -0.5, 0.77, 0, 0);
   left: -50px;
   top: -55px;
+  ${mediaQueries.mobile} {
+    display: none;
+  }
 `;
 
 const Butterfly3 = styled.img`
@@ -66,6 +81,9 @@ const Butterfly3 = styled.img`
   transform: matrix(0.96, -0.69, 0.52, 0.76, 0, 0);
   left: -190px;
   top: 60px;
+  ${mediaQueries.mobile} {
+    display: none;
+  }
 `;
 
 

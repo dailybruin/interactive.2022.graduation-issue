@@ -10,13 +10,13 @@ const Container = styled.div`
     row-gap: 35px;
     column-gap: 35px;
     margin: auto;
-    width: 100%;
+    max-width: 100%;
     align-items: start;
 
     ${mediaQueries.mobile} {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100vw;
         margin: auto;
         align-items: center;
     }

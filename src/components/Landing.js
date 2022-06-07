@@ -22,6 +22,9 @@ const Credits = styled.div `
     bottom: 0;
     right: 10px; 
     padding-bottom: 15px;
+    ${mediaQueries.mobile} {
+        font-size: 8px;
+    }
 ` 
 
 export default function Landing(props){

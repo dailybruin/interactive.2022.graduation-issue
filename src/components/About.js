@@ -13,12 +13,8 @@ const Container = styled.div`
   border: 15px solid rgba(255, 255, 255, 0.5);
   font-family: "Courier Prime", monospace;
 
-  /* scroll-behavior: smooth;
-  overflow-y: scroll;
-  max-height: 765px; */
-
   ${mediaQueries.mobile} {
-    width: 90%;
+    width: 90vw;
   }
 `;
 
@@ -35,6 +31,9 @@ const Header = styled.div`
   text-shadow: 0px 4px 4px rgba(82, 79, 64, 0.15);
   color: #785887;
   padding-bottom: 40px;
+  ${mediaQueries.mobile} {
+    font-size: 20px;
+  }
 `;
 
 const Content = styled.div`
@@ -43,12 +42,18 @@ const Content = styled.div`
   font-size: 32px;
   line-height: 36px;
   text-align: justify;
+  ${mediaQueries.mobile} {
+    font-size: 15px;
+  }
 `;
 
 const BottomBorder = styled.img`
   position: absolute;
   bottom: -1.5%;
   left: -12%;
+  ${mediaQueries.mobile} {
+    display: none;
+  }
 `;
 
 const ButterflyBottom = styled.img`
@@ -58,6 +63,9 @@ const ButterflyBottom = styled.img`
   height: 314px;
   bottom: -1.5%;
   right: -12%;
+  ${mediaQueries.mobile} {
+    display: none;
+  }
 `;
 
 const ButterflyTop = styled.img`
@@ -69,10 +77,7 @@ const ButterflyTop = styled.img`
   left: -2%;
 
   ${mediaQueries.mobile} {
-    top: -2%;
-    left: -8%;
-    width: 2%;
-    height: 2%;
+    display: none;
   }
 `;
 

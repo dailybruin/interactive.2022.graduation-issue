@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mediaQueries } from "../shared/config";
 
 import { HashLink } from "react-router-hash-link";
 
@@ -32,6 +33,9 @@ const Page = styled.div`
   border: 1px solid #785887;
   box-sizing: border-box;
   padding: 2px 10px;
+  ${mediaQueries.mobile} {
+    font-size: 14px;
+  }
 `;
 
 export default function NavBar(props) {
