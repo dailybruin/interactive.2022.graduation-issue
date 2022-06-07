@@ -6,7 +6,6 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ArticleCard from "./components/ArticleCard";
 
 import leftBorder from "./images/leftBorder.svg";
 import rightBorder from "./images/rightBorder.svg";
@@ -14,7 +13,7 @@ import rightBorder from "./images/rightBorder.svg";
 // import Border from "./components/Border.js";
 import EditorLetter from "./components/EditorLetter";
 import About from "./components/About";
-import BannerAd from "./components/BannerAd";
+// import BannerAd from "./components/BannerAd";
 import Landing from "./components/Landing";
 import Timeline from "./components/timeline/timeline";
 import NavBar from "./components/NavBar";
@@ -23,28 +22,35 @@ import DescriptionBox from "./components/DescriptionBox";
 
 
 const Articles = styled.div`
-  width: 100%;
-
-  ${mediaQueries.mobile} {
-    /* background-fit: cover; */
-    background-repeat: repeat-y;
-    background-size: 100% 50%;
-  }
-`;
-
-const LeftContainer = styled.img`
-  padding-top: 90px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  margin-top: -100px;
+  margin: auto;
 `
 
-const RightContainer = styled.img`
-  padding-top: 90px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+const BorderGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  width: 100%;
+`
+
+const LeftContainer = styled.div`
+  width: fit-content;
+  justify-self: flex-start;
+  img {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding-top: 100px;
+  }
+`
+
+const RightContainer = styled.div`
+  justify-self: flex-end;
+  width: fit-content;
+  img {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding-top: 100px;
+  }
 `
 
 const Section = styled.div`
@@ -86,27 +92,29 @@ const AppContent = () => {
         Timeline
       </Section>
       <Timeline />
-      <Articles>
-        {/* <LeftContainer src= {leftBorder}/>
-        <RightContainer src= {rightBorder}/> */}
-        <Section id="news">News</Section>
-        {data && <ArticleGrid articles={data.news}/>}
-        <Section id="sports">Sports</Section>
-        {data && <ArticleGrid articles={data.sports}/>}
-        <Section id="arts">Arts</Section>
-        {data && <ArticleGrid articles={data.arts}/>}
-        <Section id="opinion">Opinion</Section>
-        {data && <ArticleGrid articles={data.opinion}/>}
-        <Section id="the-quad">The Quad</Section>
-        {data && <ArticleGrid articles={data.quad}/>}
-        <Section id="multimedia">Multimedia</Section>
-        {data && <ArticleGrid articles={data.multimedia}/>}
-        <Section id="prime">Prime</Section>
-        {data && <ArticleGrid articles={data.prime}/>}
-        <Section id="-30-">-30-</Section>
-        <DescriptionBox/>
-        {data && <ArticleGrid articles={data.thirty}/>}
-      </Articles>
+      <BorderGrid>
+          <LeftContainer> <img src= {leftBorder}/> </LeftContainer>  
+          <Articles>
+            <Section id="news">News</Section>
+            {data && <ArticleGrid articles={data.news}/>}
+            <Section id="sports">Sports</Section>
+            {data && <ArticleGrid articles={data.sports}/>}
+            <Section id="arts">Arts</Section>
+            {data && <ArticleGrid articles={data.arts}/>}
+            <Section id="opinion">Opinion</Section>
+            {data && <ArticleGrid articles={data.opinion}/>}
+            <Section id="the-quad">The Quad</Section>
+            {data && <ArticleGrid articles={data.quad}/>}
+            <Section id="multimedia">Multimedia</Section>
+            {data && <ArticleGrid articles={data.multimedia}/>}
+            <Section id="prime">Prime</Section>
+            {data && <ArticleGrid articles={data.prime}/>}
+            <Section id="-30-">-30-</Section>
+            <DescriptionBox/>
+            {data && <ArticleGrid articles={data.thirty}/>}
+          </Articles>
+          <RightContainer> <img src= {rightBorder}/> </RightContainer> 
+      </BorderGrid>
       {data && <About about={data.about} />}
       <Footer />
     </div>

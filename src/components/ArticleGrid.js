@@ -10,7 +10,7 @@ const Container = styled.div`
     row-gap: 35px;
     column-gap: 35px;
     margin: auto;
-    width: 75%;
+    width: 100%;
     align-items: start;
 
     ${mediaQueries.mobile} {
@@ -33,7 +33,6 @@ export default function ArticleGrid(props) {
                         <Card article_title={item.article_title} article_byline={item.article_byline} article_image={item.article_image} article_url={item.article_url} color={item.color}/>
                     )
                 }
-                
             }) : null}
         </Container>
     )
