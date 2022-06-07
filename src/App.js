@@ -20,12 +20,11 @@ import NavBar from "./components/NavBar";
 import ArticleGrid from "./components/ArticleGrid";
 import DescriptionBox from "./components/DescriptionBox";
 
-
 const BorderGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   width: 100vw;
-`
+`;
 
 const Articles = styled.div`
   margin: auto;
@@ -34,7 +33,7 @@ const Articles = styled.div`
     margin: auto;
     width: 100vw;
   }
-`
+`;
 
 const LeftContainer = styled.div`
   justify-self: flex-start;
@@ -44,10 +43,10 @@ const LeftContainer = styled.div`
     top: 0;
     padding-top: 100px;
     ${mediaQueries.mobile} {
-      display: none
+      display: none;
     }
   }
-`
+`;
 
 const RightContainer = styled.div`
   justify-self: flex-end;
@@ -57,10 +56,10 @@ const RightContainer = styled.div`
     top: 0;
     padding-top: 100px;
     ${mediaQueries.mobile} {
-      display: none
+      display: none;
     }
   }
-`
+`;
 
 const Section = styled.div`
   font-family: "Macondo", cursive;
@@ -77,8 +76,6 @@ const Section = styled.div`
 const AppContent = () => {
   const [data, setData] = useState(null);
 
-  console.log("here");
-
   useEffect(() => {
     fetch(
       "https://kerckhoff.dailybruin.com/api/packages/flatpages/interactive.2022.grad-issue"
@@ -86,8 +83,6 @@ const AppContent = () => {
       .then((res) => res.json())
       .then((res) => setData(res.data["article.aml"]));
   }, []);
-
-  data && console.log(data); 
 
   return (
     <div className="App">
@@ -100,32 +95,36 @@ const AppContent = () => {
       )}
       <NavBar />
       {data && <EditorLetter editor_letter={data.editor_letter} />}
-      <Section>
-        Timeline
-      </Section>
+      <Section>Timeline</Section>
       <Timeline />
       <BorderGrid>
-          <LeftContainer> <img src= {leftBorder}/> </LeftContainer>  
-          <Articles>
-            <Section id="news">News</Section>
-            {data && <ArticleGrid articles={data.news}/>}
-            <Section id="sports">Sports</Section>
-            {data && <ArticleGrid articles={data.sports}/>}
-            <Section id="arts">Arts</Section>
-            {data && <ArticleGrid articles={data.arts}/>}
-            <Section id="opinion">Opinion</Section>
-            {data && <ArticleGrid articles={data.opinion}/>}
-            <Section id="the-quad">The Quad</Section>
-            {data && <ArticleGrid articles={data.quad}/>}
-            <Section id="multimedia">Multimedia</Section>
-            {data && <ArticleGrid articles={data.multimedia}/>}
-            <Section id="prime">Prime</Section>
-            {data && <ArticleGrid articles={data.prime}/>}
-            <Section id="-30-">-30-</Section>
-            <DescriptionBox/>
-            {data && <ArticleGrid articles={data.thirty}/>}
-          </Articles>
-          <RightContainer> <img src= {rightBorder}/> </RightContainer> 
+        <LeftContainer>
+          {" "}
+          <img src={leftBorder} />{" "}
+        </LeftContainer>
+        <Articles>
+          <Section id="news">News</Section>
+          {data && <ArticleGrid articles={data.news} />}
+          <Section id="sports">Sports</Section>
+          {data && <ArticleGrid articles={data.sports} />}
+          <Section id="arts">Arts</Section>
+          {data && <ArticleGrid articles={data.arts} />}
+          <Section id="opinion">Opinion</Section>
+          {data && <ArticleGrid articles={data.opinion} />}
+          <Section id="the-quad">The Quad</Section>
+          {data && <ArticleGrid articles={data.quad} />}
+          <Section id="multimedia">Multimedia</Section>
+          {data && <ArticleGrid articles={data.multimedia} />}
+          <Section id="prime">Prime</Section>
+          {data && <ArticleGrid articles={data.prime} />}
+          <Section id="-30-">-30-</Section>
+          <DescriptionBox />
+          {data && <ArticleGrid articles={data.thirty} />}
+        </Articles>
+        <RightContainer>
+          {" "}
+          <img src={rightBorder} />{" "}
+        </RightContainer>
       </BorderGrid>
       {data && <About about={data.about} />}
       <Footer />
