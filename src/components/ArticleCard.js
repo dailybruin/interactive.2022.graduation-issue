@@ -11,7 +11,7 @@ const Image = styled.img`
     padding: 10px;
     z-index: 12;
     object-fit: cover;
-`;
+`
 
 const Title = styled.a`
     display: block;
@@ -56,6 +56,9 @@ export default function ArticleCard(props)
         color: #${getTextColor(props.color)};
         height: fit-content;
         block-size: fit-content;
+
+        margin-left: 20%;
+
         ${mediaQueries.mobile} {
             width: 90%;
     }

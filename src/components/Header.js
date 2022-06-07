@@ -9,7 +9,7 @@ const DBHeader = styled("div")`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: black;
+  background: #A7C5C6;
   width: 100%;
   padding: 0.2em 0;
   color: white;
@@ -26,7 +26,6 @@ const DBHeader = styled("div")`
 const Header = () => {
   return (
     <DBHeader>
-      {/* Daily Bruin */}
       <a href="https://dailybruin.com">
         <img src={DBLogo} alt="Daily Bruin" />
       </a>
