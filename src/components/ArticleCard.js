@@ -11,7 +11,7 @@ const Image = styled.img`
     padding: 10px;
     z-index: 12;
     object-fit: cover;
-`;
+`
 
 const Title = styled.a`
     display: block;

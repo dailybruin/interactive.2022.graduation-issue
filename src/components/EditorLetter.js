@@ -20,7 +20,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-  padding: 10% 13%;
+  padding: 10% 10%;
 `;
 
 const Header = styled.div`
@@ -40,19 +40,11 @@ const Content = styled.div`
   font-size: 32px;
   line-height: 36px;
   text-align: justify;
-  padding-bottom: 50px;
 `;
-
-// const SignOff = styled.div`
-//   margin: auto;
-//   font-weight: 400;
-//   font-size: 32px;
-//   text-align: justify;
-// `;
 
 const BottomBorder = styled.img`
   position: absolute;
-  bottom: -4%;
+  bottom: -4.5%;
   right: -13%;
 `;
 
@@ -76,6 +68,7 @@ const Butterfly3 = styled.img`
   top: 60px;
 `;
 
+
 export default function EditorLetter(props) {
   return (
     <Container>
@@ -91,6 +84,9 @@ export default function EditorLetter(props) {
             }
             else if (info.type == 'signoff') {
               return (<p>{info.content} </p>)
+            }
+            else if (info.type == 'closing') {
+              return (<p style={{"padding-top": "30px"}}>{info.content}</p>)
             }
           })}
         </Content>

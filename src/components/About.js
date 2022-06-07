@@ -10,9 +10,12 @@ const Container = styled.div`
   margin: 5% auto 10% auto;
   width: 75%;
   height: fit-content;
-  block-size: fit-content;
   border: 15px solid rgba(255, 255, 255, 0.5);
   font-family: "Courier Prime", monospace;
+
+  /* scroll-behavior: smooth;
+  overflow-y: scroll;
+  max-height: 765px; */
 
   ${mediaQueries.mobile} {
     width: 90%;
@@ -20,7 +23,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-  padding: 10% 13%;
+  padding: 10% 10%;
 `;
 
 const Header = styled.div`
@@ -62,14 +65,17 @@ const ButterflyTop = styled.img`
   transform: rotate(7.26deg);
   width: 208px;
   height: 196px;
-  top: 0.5%;
+  top: 30px;
   left: -2%;
 
   ${mediaQueries.mobile} {
     top: -2%;
     left: -8%;
+    width: 2%;
+    height: 2%;
   }
 `;
+
 
 export default function About(props) {
   return (
