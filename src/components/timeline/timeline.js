@@ -550,7 +550,7 @@ const Timeline = () => {
               alt="Bengals walking out of Drake Stadium"
             ></img>
             <p className="photo-byline">
-              (David Rimer, Daily Bruin senior sßtaff)
+              (David Rimer, Daily Bruin senior staff)
             </p>
             <a
               className="readMore"
