@@ -86,7 +86,6 @@ const Butterfly3 = styled.img`
   }
 `;
 
-
 export default function EditorLetter(props) {
   return (
     <Container>
@@ -95,16 +94,14 @@ export default function EditorLetter(props) {
       <Butterfly3 src={outlineButterfly} />
       <Text>
         <Header id="letter-from-the-editors">Letter From the Editors</Header>
-        <Content>
+        <Content style={{ margin: "auto" }}>
           {props.editor_letter.map((info) => {
-            if (info.type == 'paragraph'){
-              return ( <p>{info.content}</p> )
-            }
-            else if (info.type == 'signoff') {
-              return (<p>{info.content} </p>)
-            }
-            else if (info.type == 'closing') {
-              return (<p style={{"padding-top": "30px"}}>{info.content}</p>)
+            if (info.type == "paragraph") {
+              return <p>{info.content}</p>;
+            } else if (info.type == "signoff") {
+              return <p>{info.content} </p>;
+            } else if (info.type == "closing") {
+              return <p style={{ "padding-top": "30px" }}>{info.content}</p>;
             }
           })}
         </Content>

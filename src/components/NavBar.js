@@ -6,19 +6,20 @@ import { HashLink } from "react-router-hash-link";
 
 const StickyContainer = styled.div`
   padding-top: 50px;
+  margin: auto;
   position: sticky;
   top: 0;
   z-index: 100;
-`
+`;
 
 const Row = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0px auto auto 3%;
+  margin: auto;
+  justify-content: center;
   width: fit-content;
   max-width: 90vw;
-  background-color: #d0d5bf;
 `;
 
 const Page = styled.div`
@@ -31,6 +32,7 @@ const Page = styled.div`
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #785887;
+  background-color: #d0d5bf;
   box-sizing: border-box;
   padding: 2px 10px;
   ${mediaQueries.mobile} {

@@ -99,7 +99,7 @@ const AppContent = () => {
           />
           {landingDisplayed && (
             <>
-              <NavBar />
+              <NavBar style={{ margin: "auto" }} />
               <EditorLetter editor_letter={data.editor_letter} />
               <Section>Timeline</Section>
               <Timeline />
