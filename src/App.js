@@ -84,8 +84,6 @@ const AppContent = () => {
       .then((res) => setData(res.data["article.aml"]));
   }, []);
 
-  data && console.log(data);
-
   return (
     <div className="App">
       <Header />
