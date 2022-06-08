@@ -17,7 +17,7 @@ const Credits = styled.div`
   font-family: "Courier Prime", monospace;
   font-size: 14px;
   font-weight: 700;
-  color: #524f40;
+  color: #7e7b67;
   position: absolute;
   bottom: 0;
   right: 10px;
@@ -28,10 +28,11 @@ const Credits = styled.div`
 `;
 
 export default function Landing(props) {
+  setTimeout(props.setLandingDisplayed(true), 500);
   return (
     <Container>
-      <Illo src={props.landing_image}></Illo>
-      <Credits> {props.landing_credits} </Credits>
+      <Illo src={props.landing_gif}></Illo>
+      <Credits>{props.landing_credits}</Credits>
     </Container>
   );
 }

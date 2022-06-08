@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "./App.css";
 import { mediaQueries } from "./shared/config";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import landing_gif from "./gradissue22.titleanimation.gif";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -75,6 +76,7 @@ const Section = styled.div`
 
 const AppContent = () => {
   const [data, setData] = useState(null);
+  const [landingDisplayed, setLandingDisplayed] = useState(false);
 
   useEffect(() => {
     fetch(
@@ -85,50 +87,58 @@ const AppContent = () => {
   }, []);
 
   return (
-    <div className="App">
-      <Header />
+    <>
       {data && (
-        <Landing
-          landing_image={data.landing_image}
-          landing_credits={data.landing_credits}
-        />
+        <div className="App">
+          <Header />
+          <Landing
+            landing_gif={landing_gif}
+            landing_image={data.landing_image}
+            landing_credits={data.landing_credits}
+            setLandingDisplayed={setLandingDisplayed}
+          />
+          {landingDisplayed && (
+            <>
+              <NavBar />
+              <EditorLetter editor_letter={data.editor_letter} />
+              <Section>Timeline</Section>
+              <Timeline />
+              <BorderGrid>
+                <LeftContainer>
+                  {" "}
+                  <img src={leftBorder} />{" "}
+                </LeftContainer>
+                <Articles>
+                  <Section id="news">News</Section>
+                  <ArticleGrid articles={data.news} />
+                  <Section id="sports">Sports</Section>
+                  <ArticleGrid articles={data.sports} />
+                  <Section id="arts">Arts</Section>
+                  <ArticleGrid articles={data.arts} />
+                  <Section id="opinion">Opinion</Section>
+                  <ArticleGrid articles={data.opinion} />
+                  <Section id="the-quad">The Quad</Section>
+                  <ArticleGrid articles={data.quad} />
+                  <Section id="multimedia">Multimedia</Section>
+                  <ArticleGrid articles={data.multimedia} />
+                  <Section id="prime">Prime</Section>
+                  <ArticleGrid articles={data.prime} />
+                  <Section id="-30-">-30-</Section>
+                  <DescriptionBox />
+                  <ArticleGrid articles={data.thirty} />
+                </Articles>
+                <RightContainer>
+                  {" "}
+                  <img src={rightBorder} />{" "}
+                </RightContainer>
+              </BorderGrid>
+              <About about={data.about} />
+              <Footer />
+            </>
+          )}
+        </div>
       )}
-      <NavBar />
-      {data && <EditorLetter editor_letter={data.editor_letter} />}
-      <Section>Timeline</Section>
-      <Timeline />
-      <BorderGrid>
-        <LeftContainer>
-          {" "}
-          <img src={leftBorder} />{" "}
-        </LeftContainer>
-        <Articles>
-          <Section id="news">News</Section>
-          {data && <ArticleGrid articles={data.news} />}
-          <Section id="sports">Sports</Section>
-          {data && <ArticleGrid articles={data.sports} />}
-          <Section id="arts">Arts</Section>
-          {data && <ArticleGrid articles={data.arts} />}
-          <Section id="opinion">Opinion</Section>
-          {data && <ArticleGrid articles={data.opinion} />}
-          <Section id="the-quad">The Quad</Section>
-          {data && <ArticleGrid articles={data.quad} />}
-          <Section id="multimedia">Multimedia</Section>
-          {data && <ArticleGrid articles={data.multimedia} />}
-          <Section id="prime">Prime</Section>
-          {data && <ArticleGrid articles={data.prime} />}
-          <Section id="-30-">-30-</Section>
-          <DescriptionBox />
-          {data && <ArticleGrid articles={data.thirty} />}
-        </Articles>
-        <RightContainer>
-          {" "}
-          <img src={rightBorder} />{" "}
-        </RightContainer>
-      </BorderGrid>
-      {data && <About about={data.about} />}
-      <Footer />
-    </div>
+    </>
   );
 };
 
